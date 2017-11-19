@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!--
+     Created on :
+     Author : Azhar Hussain
+     Email: azharhussain4647@gmail.com
+     Website:
+     Facebook: https://www.facebook.com/azhar.hussainmasum
+-->
+<html class="no-js" lang="">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!-- Meta for Search Engine -->
+        <meta name="keywords" content="Website,Web Design,Web Development">
+        <meta name="description" content="">
+
+        <!-- Title --->
+        <title>Admin Panel -CSE </title>
+
+        <!-- Favicons -->
+        <link rel="icon" type="image/x-icon" href="img/">
+
+        <!-- Font Awesome Icon CSS-->
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+
+        <!-- BootStrap CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+        <!-- Google Font -->
+
+        <!-- HTML5 Boilerplate CSS -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <!-- Customize CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/media.css"/>
+
+        <!--HTML5shiv Js-->
+        <script src="assets/js/modernizr-3.5.0.min.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default">      <!---Nav Start Here-->   
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Admin Panel - Online Shop</a>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav navbar-right" id="dd">
+
+                        <li><button class="btn btn-primary"> Username</button></li>
+                       
+                        <li><button class="btn btn-success"> Log Out</button></li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>  <!---Nav End Here--> 
+
+        <div class="container">
+
+            <div class="row">
+               <div class="col-sm-12 form-group"> <!--Menu-Tabs Start Here-->
+                    <div class="Menu">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#product" aria-controls="product" role="tab" data-toggle="tab">Products</a></li>
+                            <li role="presentation"><a href="#order" aria-controls="order" role="tab" data-toggle="tab">Order</a></li>
+                            <li role="presentation"><a href="#catergory" aria-controls="catergory" role="tab" data-toggle="tab">Add Category</a></li>
+                            <li role="presentation"><a href="#admin" aria-controls="admin" role="tab" data-toggle="tab">Create Admin</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!--Product Start Here -->
+                            <div role="tabpanel" class="tab-pane active" id="product"> 
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-striped table-hover ">
+                                                <caption class="h1"> All Products </caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Serial No.</th>
+                                                        <th>Product Name</th>
+                                                        <th>Product Price</th>
+                                                        <th>Product Category</th>
+                                                        <th>Feature Product</th>
+                                                        <th>Product Images</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td> T-Shirt</td>
+                                                        <td> $.10</td>
+                                                        <td> Cloth</td>
+                                                        <td> </td>
+                                                        <td> </td>
+                                                        <td>
+                                                            <button type="button" class="btn-primary">View</button>
+                                                            <button type="button" class="btn-success">Edit</button>
+                                                            <button type="button" class="btn-danger">Delete</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div> <!--Product Table -->
+
+
+                                    <div class="col-sm-5">
+                                        <!--**************Add Product Start Here *******************---->
+                                        <div class="row">
+                                            <h2>Add Products</h2>
+                                            <br>
+                                            <form>
+
+                                                <div class="row form-group">
+                                                    <div class="col-sm-3">
+                                                        <label>Product Name</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Product Name..." required>
+                                                    </div>
+                                                </div>  
+                                                <div class="row form-group">
+                                                    <div class="col-sm-3">
+                                                        <label>Product Short Description</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" rows="2" required></textarea>
+                                                    </div>
+                                                </div> 
+                                                <div class="row form-group">
+                                                    <div class="col-sm-3">
+                                                        <label>Product Description</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" rows="4" required></textarea>
+                                                    </div>
+                                                </div>  
+
+                                                <div class="row form-group">
+                                                    <div class="col-sm-3">
+                                                        <label>Product Price</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Product Price..." required>
+                                                    </div>
+                                                </div>  
+                                                <div class="row form-group">
+                                                    <div class="col-sm-3">
+                                                        <label>Category</label>
+
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-control">
+                                                            <option>-Select-</option>
+                                                            <option>Clothes</option>
+                                                            <option>Jewellery</option>
+                                                            <option>Shoes</option>
+                                                        </select>
+                                                    </div>
+                                                </div> 
+                                                <div class="row form-group">
+                                                    <div class="col-sm-3">
+                                                        <label>Product Image</label>
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" required>
+                                                    </div>
+                                                </div>  
+
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  <!--Product End Here -->
+
+                            <!--Order Start Here -->
+                            <div role="tabpanel" class="tab-pane" id="order">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped table-hover">
+                                        <caption class="h1"> Prodocts Order Details </caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Product Name</th>
+                                                <th>Product Images</th>
+                                                <th>Product Price</th>
+                                                <th>Product Quantity</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td> T-Shirt</td>
+                                                <td> Images</td>
+                                                <td> 210</td>
+                                                <td>10 </td>
+                                                <td>
+                                                    <button type="button" class="btn-primary">View</button>
+                                                    <button type="button" class="btn-success">Edit</button>
+                                                    <button type="button" class="btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>       
+                            </div>  <!--Order End Here -->
+
+                            <!--Category Start Here -->
+                            <div role="tabpanel" class="tab-pane" id="catergory">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Category ID.</th>
+                                                        <th>Category Name</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td>Cloth</td>
+                                                        <td>
+                                                            <button type="button" class="btn-primary">View</button>
+                                                            <button type="button" class="btn-success">Edit</button>
+                                                            <button type="button" class="btn-danger">Delete</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h2>Add New Category</h2>
+                                        <label>Category Name :</label>
+                                        <input type="text" class="form-control form-group" placeholder="Enter Product Name">
+                                        <button type="button" class="btn btn-primary">Add Category</button>
+                                    </div>
+                                </div>
+
+                            </div>  <!--Category End Here -->
+
+                            <!--Admin Start Here -->
+                            <div role="tabpanel" class="tab-pane" id="admin">
+                                <div class="col-sm-6">
+                                    <h2>Create New Admin</h2>
+                                    <br>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder=" *Admin Name..." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder=" *Email Address" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder=" *Enter Password.." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder=" *Re-Enter Password.." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" placeholder=" *Mobile Number..." required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder=" *Admin Address" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn-primary form-control" value="Create">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>  <!--Admin End Here -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/jquery-3.2.1.min.js"><\/script>')</script>
+
+        <!-- Bootstrap Js -->
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- Custom JS --->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga = function () {
+                ga.q.push(arguments)
+            };
+            ga.q = [];
+            ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto');
+            ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
